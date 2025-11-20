@@ -1,0 +1,12 @@
+{
+    "name": "crimsonium-overhaul",
+    "displayName": "Crimsonium Overhaul"
+    "subtitle": "hell yeah"
+    "author": "popusk337"
+ 
+    "description": "Что этот дидди блад делает на калькуляторе?"
+    "version": "6.7"
+    "minGameVersion": 146
+    "dependencies": [ ]
+    "hidden": true
+}

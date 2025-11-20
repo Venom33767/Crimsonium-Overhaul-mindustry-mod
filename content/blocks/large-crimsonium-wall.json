@@ -1,0 +1,12 @@
+{
+"name": "Large Crimsonium Wall",
+"description": "Protects structures from enemy projectiles.",
+"type": "Wall",
+"health": "1875",
+"size": "2",
+"requirements": [
+ { "item": "crimsonium", "amount": 24}
+],
+"category": "defense" ,
+"research": "crimsonium-wall"
+}

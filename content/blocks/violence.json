@@ -1,0 +1,67 @@
+{
+"type": "itemTurret",
+"name": "Violence",
+"description": "Shoots 5 bullets at the same time with a big cone",
+"health": 325,
+"size": 2,
+"recoil": 2,
+"reload": 40,
+"range": 180,
+"rotatespeed": 14,
+ "targetGround": true,
+ "targetAir": true,
+ "hasLiquids":true,
+ "maxAmmo": 20,
+ "hasPower": false,
+ "ammoPerShot": 2,
+ "shoot": {
+    "type": "shootSpread",
+    "shots": 5,
+    "spread": 7
+  },
+"shootCone": 20,
+ "ammoTypes": {
+        "crimsonium": {
+            "type": "missileBulletType",
+            "frontColor": "ebac4b",
+            "backColor": "828282",
+            "speed": 3,
+"damage": 25,
+            "width": 6,
+            "height": 6,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "flakExplosion",
+            "buildingDamageMultiplier": 0.5,
+            "ammoMultiplier": 1
+          },
+  "copper": {
+            "type": "missileBulletType",
+            "frontColor": "ebac4b",
+            "backColor": "828282",
+             "damage": 10,
+            "speed": 3,
+            "width": 6,
+            "height": 6,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "flakExplosion",
+            "buildingDamageMultiplier": 0.5,
+            "ammoMultiplier": 1
+          }
+      },
+"category": "turret" ,
+"shootSound": "missile",
+"research": "scar",
+"requirements": [
+ { "item": "crimsonium", "amount": 120},
+ { "item": "copper", "amount": 80},
+ { "item": "lead", "amount": 120}
+],
+"liquidCapacity":30,
+    "consumes":{
+		"coolant":{"liquid": "water", "amount":0.4,"optional":true},
+	},
+    "coolantMultiplier": 1
+
+}
