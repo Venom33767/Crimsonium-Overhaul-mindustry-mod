@@ -1,9 +1,0 @@
-{
- "type": "material",
- "name": "Crimsonium",
- "description": "A common mineral thats mined on the surface"
- "hardness": 3,
- "cost": 2.0,
- "color": "e01b1b",
- "tier":2
-}
