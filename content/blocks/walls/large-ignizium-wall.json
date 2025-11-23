@@ -1,0 +1,12 @@
+{
+"name": "Large Ignizium Wall",
+"description": "Protects structures from enemy projectiles.",
+"type": "Wall",
+"health": "2605",
+"size": "2",
+"requirements": [
+ { "item": "ignizium", "amount": 24}
+],
+"category": "defense" ,
+"research": "ignizium-wall"
+}

@@ -1,0 +1,146 @@
+{
+    "outlineColor": "36363c",
+    "type": "legs",
+    "name": "Hierogly",
+  "research": {
+    "parent": "quatric",
+    "requirements": [
+      "crimsonium/21000",
+      "lead/18000",
+      "silicon/14000"
+      "ignizium/9500"
+
+    ]
+  },
+    "speed": 0.4,
+    "hitSize": 10,
+    "health": 20000,
+    "faceTarget": true,
+    "armor": 2,
+    "range": 270,
+    "targetAir": false,
+    "rotateSpeed": 3,
+    "legMoveSpace": 1,
+    "legMaxLength": 2,
+    "legMinLength": 0.8,
+    "legLengthScl": 1,
+    "legForwardScl": 1.1,
+    "legPhysicsLayer": false,
+    "legGroupSize": 4,
+    "legCount": 8,
+    "legExtension": -2,
+    "legContinuousMove": true,
+    "lockLegBase": true,
+    "rippleScale": 0.2,
+    "legBaseOffset": 5,
+    "legLength": 44,
+    "allowLegStep": true,
+    "hovering": true,
+    "immunities": [
+        "freezing"
+    ],
+    "weapons": [
+        {
+             "x": 0,
+            "rotate": false,
+            "mirror": true,
+            "reload": 120,
+            "recoil": 4,
+            "alternate": true,
+            "minWarmup": 0.9,
+            "shootCone": 10,
+            "cooldownTime": 145,
+            "shootSound": "shootBig",
+            "shoot": {
+                "type": "shootSpread",
+                "spread": 4,
+                "shots": 8,
+                "shotDelay": 3
+            },
+            "bullet": {
+                "type": "missileBulletType",
+                "width": 18,
+                "height": 14,
+                "sprite": "circle-bullet",
+                "frontColor": "FFFFFF",
+                "backColor": "ff8214",
+                "lifetime": 50,
+                "speed": 8,
+                "damage": 120,
+                "splashDamage": 90,
+        "splashDamageRadius": 40,
+
+                "pierceArmor": true,
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "hitEffect": "flakExplosion"
+            }
+        },
+        {
+            "name": "medium-shotgun",
+          "top": true,
+            "rotate": true,
+            "x": 12,
+            "shootY": 8.5,
+             "alternate": true,
+            "mirror": true,
+            "reload": 40,
+            "recoil": 2,
+            "shootSound": "shootAltLong",
+            "shoot": {
+                "type": "shootSpread",
+                "spread": 4,
+                "shots": 8
+            },
+            "shootCone": 15,
+            "bullet": {
+                "type": "basicBulletType",
+                "damage": 45,
+                "width": 10,
+                "length": 10,
+                "lifetime": 30,
+                "shake": 0.5,
+                "speed": 8,
+                "hitEffect": "flakExplosion"
+                "shootEffect": "shootBig"
+            }
+        },
+  {
+            "name": "medium-mg",
+          "top": true,
+            "rotate": true,
+
+"x": 0,
+            "y": -10,
+             "alternate": false,
+            "mirror": false,
+            "reload": 20,
+            "recoil": 8,
+            "shootSound": "laser",
+            "shoot": {
+                "shots": 1
+            },
+            "shootCone": 15,
+            "bullet": {
+                "type": "missileBulletType",
+                "damage": 30,
+"splashDamage": 25,
+        "splashDamageRadius": 30,
+
+                "width": 25,
+                "length": 25,
+                "lifetime": 45,
+                "shake": 2,
+                "speed": 8,
+"trailColor": "db8132",
+      "trailLength": 9,
+      "trailWidth": 9,
+                "hitEffect": "massiveExplosion",
+                "shootEffect": "shootBig"
+   "frontColor": "ffffffff",
+      "backColor": "ff8214"
+            }
+        }
+
+    ]
+}

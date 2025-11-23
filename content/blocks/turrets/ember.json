@@ -1,0 +1,69 @@
+{
+  "type": "ItemTurret",
+  "researchCostMultiplier": 0.2,
+  "size": 1,
+  "health": 240,
+  "reload": 60,
+  "range": 230,
+  "targetAir": false,
+  "recoil": 0.7,
+  "rotateSpeed": 3,
+  "shootSound": "shootBig",
+ "shoot": {
+    "type": "shootSpread",
+    "shots": 2,
+    "spread": 7
+  },
+"shootCone": 20,
+
+  "ammoTypes": {
+   "ignizium": {
+            "type": "ArtilleryBulletType",
+            "frontColor": "ffffffff",
+            "backColor": "ff8214",
+            "speed": 9,
+            "damage": 30,
+            "width": 10,
+            "height": 20,
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "lifetime": 150,
+            "hitEffect": "flakExplosion",
+            "splashDamage": 30,
+            "splashDamageRadius": 30,
+            "buildingDamageMultiplier": 0.8,
+            
+            "trailLength": 5.5,
+            "trailWidth": 3.5,
+            "trailColor": "db8132",
+            "ammoMultiplier": 1,
+  "fragBullets": 3,
+      "fragBullet": {
+        "type": "ArtilleryBulletType",
+        "width": 8,
+        "height": 8,
+        "speed": 4,
+        "lifetime": 50,
+        "damage": 20,
+        "splashDamage": 20,
+        "splashDamageRadius": 30,
+        "status": "burning",
+            "shootEffect": "shootSmall",
+            "smokeEffect": "shootSmallSmoke",
+            "hitEffect": "flakExplosion",
+            "buildingDamageMultiplier": 0.5,
+            "ammoMultiplier": 1
+        "frontColor": "ffffffff",
+        "backColor": "ff8214"
+      }
+    }
+  },
+
+"requirements": [
+ { "item": "crimsonium", "amount": 120},
+ { "item": "copper", "amount": 275},
+ { "item": "ignizium", "amount": 120},
+],
+  "category": "turret",
+  "research": "scar"
+}

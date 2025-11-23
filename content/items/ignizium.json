@@ -1,0 +1,9 @@
+{
+ "type": "material",
+ "name": "Ignizium",
+ "description": "Cooled Scoriazon alloy, used mainly in creating units"
+ "hardness": 4,
+ "cost": 2.0,
+ "color": "ed671a",
+ "tier":3
+}

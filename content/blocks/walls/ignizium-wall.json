@@ -1,0 +1,12 @@
+{
+"name": "Ignizium Wall",
+"description": "Protects structures from enemy projectiles.",
+"type": "Wall",
+"health": "670",
+"size": "1",
+"requirements": [
+ { "item": "ignizium", "amount": 6}
+],
+"category": "defense" ,
+"research": "crimsonium-wall"
+}

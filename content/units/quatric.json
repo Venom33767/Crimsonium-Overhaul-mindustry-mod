@@ -1,0 +1,108 @@
+{
+    "outlineColor": "36363c",
+    "type": "legs",
+    "name": "Quatric",
+  "research": {
+    "parent": "gyres",
+    "requirements": [
+      "crimsonium/7600",
+      "lead/9200",
+      "silicon/8000",
+      "ignizium/3400"
+    ]
+  },
+    "speed": 0.5,
+    "hitSize": 10,
+    "health": 7600,
+    "faceTarget": true,
+    "armor": 2,
+    "range": 200,
+    "targetAir": false,
+    "rotateSpeed": 3,
+    "legMoveSpace": 1,
+    "legMaxLength": 1.4,
+    "legMinLength": 0.3,
+    "legLengthScl": 1,
+    "legForwardScl": 1.1,
+    "legPhysicsLayer": false,
+    "legGroupSize": 4,
+    "legCount": 8,
+    "legExtension": -2,
+    "legContinuousMove": true,
+    "lockLegBase": true,
+    "rippleScale": 0.2,
+    "legBaseOffset": 5,
+    "legLength": 25,
+    "allowLegStep": true,
+    "hovering": true,
+    "immunities": [
+        "freezing"
+    ],
+    "weapons": [
+        {
+             "mirror": false,
+            "x": 0,
+            "reload": 120,
+            "recoil": 2,
+            "alternate": false,
+            "minWarmup": 0.9,
+            "shootCone": 20,
+            "cooldownTime": 145,
+            "shootSound": "shootBig",
+            "shoot": {
+                "type": "shootSpread",
+                "spread": 4,
+                "shots": 6,
+                "shotDelay": 3
+            },
+            "bullet": {
+                "type": "missileBulletType",
+                "width": 13,
+                "height": 17,
+                "sprite": "circle-bullet",
+                "frontColor": "FFFFFF",
+                "backColor": "ff8214",
+                "lifetime": 40,
+                "speed": 8,
+                "damage": 80,
+                "splashDamage": 60,
+        "splashDamageRadius": 30,
+
+                "pierceArmor": true,
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "hitEffect": "flakExplosion"
+            }
+        },
+        {
+               "x": 8,
+ "name": "medium-shotgun",
+            "top": true,
+            "rotate": true,
+            "mirror": true,
+            "shootY": 8.5,
+             "alternate": true,
+            "mirror": true,
+            "reload": 40,
+            "recoil": 2,
+            "shootSound": "shootAltLong",
+            "shoot": {
+                "type": "shootSpread",
+                "spread": 4,
+                "shots": 6
+            },
+            "shootCone": 30,
+            "bullet": {
+                "type": "basicBulletType",
+                "damage": 25,
+                "width": 10,
+                "length": 10,
+                "lifetime": 20,
+                "shake": 0.5,
+                "speed": 8,
+                "hitEffect": "flakExplosion"
+                "shootEffect": "shootBig"
+            }
+        }
+    ]
+}

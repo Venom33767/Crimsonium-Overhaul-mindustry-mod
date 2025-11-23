@@ -1,0 +1,94 @@
+{
+  "type": "LaserTurret",
+  "name" : "Blaze"
+  "description" : "Big laser go brr enemies go waaaa D:"
+  "size": 2,
+  "health": 340,
+  "reload": 40,
+  "range": 120,
+  "shootLength": 10,
+  "targetAir": true,
+  "targetGround": true,
+  "consumes": {
+    "power": 4,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.2
+    }
+  },
+  "update": true,
+  "hasPower": true,
+  "shootEffect": "shootBig",
+  "firingMoveFract": 0.8,
+  "shootDuration": 130,
+  "shootSound": "laserbig",
+  "loopSound": "beam",
+  "loopSoundVolume": 1.5,
+  "recoilAmount": 1.5,
+  "restitution": 0.04,
+  "rotateSpeed": 4.5,
+  "shootType": {
+    "type": "ContinuousLaserBulletType",
+    "damage": 8,
+    "width": 3,
+    "colors": [
+      "db8132",
+      "e0432b",
+      "ff8214",
+      "FFFFFF"
+    ],
+    "length": 125,
+    "status": "burning",
+    "statusDuration": 400,
+    "largeHit": false,
+    "oscScl": 2,
+    "oscMag": 2,
+    "hitEffect": {
+"type": "multiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 10,
+            "lifetime": 45,
+            "interp": "circleOut",
+            "length": 75,
+            "cone": -40,
+            "strokeTo": 0,
+            "lightColor": "e0432b",
+            "lenFrom": 8,
+            "lenTo": 0,
+            "strokeFrom": 2,
+            "colorFrom": "e0432b",
+            "colorTo": "ff8214"
+          },
+          {
+            "type": "ExplosionEffect",
+            "waveColor": "ff8214",
+            "sparkColor": "ff8214",
+            "smokes": 4,
+            "smokeSize": 4.7,
+            "smokeSizeBase": 1.6,
+            "smokeRad": 36,
+            "waveLife": 10,
+            "waveStroke": 4.1,
+            "waveRad": 25,
+            "waveRadBase": 2.0,
+            "sparkLen": 7,
+            "sparks": 12
+
+          }
+        ]
+     },
+    "drawSize": 100,
+    "incendChance": 0
+  },
+"requirements": [
+ { "item": "crimsonium", "amount": 120},
+ { "item": "copper", "amount": 380},
+ { "item": "lead", "amount": 370},
+ { "item": "ignizium", "amount": 260},
+],
+  "category": "turret",
+  "research": "spark"
+}

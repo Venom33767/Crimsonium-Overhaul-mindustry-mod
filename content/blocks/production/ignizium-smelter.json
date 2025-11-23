@@ -1,0 +1,83 @@
+{
+ "name": "Scoriazon Cooler",
+"type": "GenericCrafter",
+  "health": 240,
+  "hasPower": true,
+  "hasLiquids": true,
+  "hasItems": true,
+  "size": 2,
+  "description": "Cools down molten scoriazon with use of titanium, turning it into ignizium "
+  "craftTime": 100,
+  "liquidCapacity": 70,
+  "craftEffect": {
+    "type": "multiEffect",
+    "effects": [
+      {
+        "type": "WaveEffect",
+        "lifetime": 40,
+        "sizeFrom": 0,
+        "sizeTo": 13,
+        "strokeFrom": 3.5,
+        "strokeTo": 0,
+        "colorFrom": "4f7c8f",
+        "colorTo": "1b536b"
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "length": 0,
+        "lightColor": "4f7c8f",
+        "lifetime": 30,
+        "layer": 109,
+        "colorFrom": "3381a3",
+        "colorTo": "2126c2"
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 5,
+        "sizeTo": 0,
+        "length": 0,
+        "lightColor": "2aa1d4",
+        "lifetime": 30,
+        "layer": 109,
+        "colorFrom": "FFFFFFF",
+        "colorTo": "FFFFFFF"
+      }
+    ]
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "fca903"
+      }
+    ]
+  },
+  "updateEffect": "none",
+  "ambientSound": "respawning",
+  "ambientSoundVolume": 0.5,
+   "consumes": {
+    "power": 4,
+    "items": [
+      "titanium/5"
+    ],
+    "liquids": [
+      "scoriazon/0.2",
+    ]
+  },
+  "requirements": [
+    "titanium/25",
+    "crimsonium/70",
+    "copper/60"
+  ],
+  "category": "crafting",
+  "research": "scoriazon-melter",
+  "outputItem": "ignizium/5"
+}
