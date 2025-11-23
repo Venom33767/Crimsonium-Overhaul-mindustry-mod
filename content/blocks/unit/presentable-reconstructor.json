@@ -1,0 +1,55 @@
+{
+  "type": "Reconstructor",
+  "name": "Presentable reconstructor",
+  "size": 5,
+  "constructTime": 800,
+  "consumes": {
+    "power": 13,
+    "items": {
+      "items": [
+        {
+          "item": "silicon",
+          "amount": 640
+        },
+        {
+          "item": "crimsonium",
+          "amount": 540
+        },
+        {
+          "item": "titanium",
+          "amount": 480
+        },
+        {
+          "item": "lead",
+          "amount": 250
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "crimsonium",
+      "amount": 350
+    },
+    {
+      "item": "silicon",
+      "amount": 180
+    },
+    {
+      "item": "metaglass",
+      "amount": 280
+    },
+    {
+      "item": "titanium",
+      "amount": 100
+    }
+  ],
+  "upgrades": [
+    [
+      "amynthas",
+      "gyres"
+    ]
+    ],
+  "category": "units",
+  "research": "multiplicative-reconstructor"
+}

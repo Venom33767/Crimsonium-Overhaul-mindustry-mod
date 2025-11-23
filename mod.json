@@ -1,0 +1,13 @@
+{
+    "name": "crimsonium-overhaul",
+    "displayName": "Crimsonium Overhaul"
+    "subtitle": "hell yeah"
+    "author": "popusk337"
+ 
+    "description": "A simple mindustry mod that i plan to add more stuff at later, right now it has 17 blocks and 2 new materials for your campaign this mod is ONLY for serpulo bcz erekir is mid"
+    "version": "0.3.2"
+    "minGameVersion": 146
+    "dependencies": [ ]
+    "hidden": true
+    "repo": "Venom33767/Crimsonium-Overhaul"
+}
