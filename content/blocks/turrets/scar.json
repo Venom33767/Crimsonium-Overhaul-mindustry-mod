@@ -1,0 +1,104 @@
+ {
+type :  itemTurret  
+ name :  Scar  
+ description :  Shoots small area damage bullets  
+ health : 250 
+ size : 1 
+ recoil : 2 
+ reload : 60 
+ range : 270 
+ inaccuracy : 5 
+ rotatespeed : 12 
+  targetGround : true 
+  targetAir : true 
+  hasLiquids :true 
+  maxAmmo : 20 
+  hasPower : false 
+  ammoPerShot : 1 
+  shoot :{
+        shots: 1
+        } 
+     ammoTypes : {
+         crimsonium : {
+             type :  basicBulletType  
+             frontColor :  ebac4b  
+             backColor :  828282  
+             speed : 9 
+             damage : 45 
+             width : 10 
+             height : 20 
+             shootEffect :  shootSmall  
+             smokeEffect :  shootSmallSmoke  
+             lifetime : 50 
+             hitEffect :  flakExplosion  
+             splashDamage : 45 
+             splashDamageRadius : 30 
+             buildingDamageMultiplier : 0.8 
+            
+             trailLength : 5.5 
+             trailWidth : 3.5 
+             trailColor :  828282  
+             ammoMultiplier : 1
+          } 
+ lead : {
+             type :  basicBulletType  
+             frontColor :  ebac4b  
+             backColor :  828282  
+             speed : 9 
+             damage : 15 
+             width : 10 
+             height : 20 
+             shootEffect :  shootSmall  
+             smokeEffect :  shootSmallSmoke  
+             lifetime : 50 
+             hitEffect :  flakExplosion  
+             splashDamage : 15 
+             splashDamageRadius : 10 
+             buildingDamageMultiplier : 0.8 
+            
+             trailLength : 5.5 
+             trailWidth : 3.5 
+             trailColor :  828282  
+             ammoMultiplier : 1
+          }
+ graphite : {
+             type :  basicBulletType  
+             frontColor :  ebac4b  
+             backColor :  828282  
+             speed : 9 
+             damage : 35 
+             width : 10 
+             height : 20 
+             shootEffect :  shootSmall  
+             smokeEffect :  shootSmallSmoke  
+             lifetime : 50 
+             hitEffect :  flakExplosion  
+             splashDamage : 35 
+             splashDamageRadius : 20 
+             buildingDamageMultiplier : 0.8 
+            
+             trailLength : 5.5 
+             trailWidth : 3.5 
+             trailColor :  828282  
+             ammoMultiplier : 1
+          }
+      } 
+ category :  turret   
+ shootSound :  shootBig  
+ research :  duo  
+requirements: [
+ crimsonium/80
+ lead/40
+ copper/70
+]
+   "hasLiquids" : true,
+"liquidCapacity":30,
+    "consumes":{
+		"coolant":{"liquid": "water", "amount":0.4,"optional":true},
+	},
+    "coolantMultiplier": 1
+
+coolantMultiplier: 1.5
+
+
+}

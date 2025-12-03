@@ -1,0 +1,87 @@
+type: ItemTurret
+name: Wrath
+description : Shoots out heavy payload missiles that can shred multiple enemies at ease
+size: 4
+rotateSpeed: 3
+recoil: 3
+shootX: 0
+shootY: 0
+shootWarmupSpeed: 0.05
+minWarmup: 0.9
+outlineColor: 42413e
+warmupMaintainTime: 90
+predictTarget: false
+shootCone: 45
+minWarmup: 0.9
+reload: 80
+researchCostMultiplier: 0.5
+range: 320
+shootSound: missile-huge
+ maxAmmo: 50
+ ammoPerShot: 10
+ drawer : {
+     type :  drawTurret  
+      parts: [
+    {
+      type: RegionPart
+      suffix: -mid
+      progress: warmup
+      moveY: -6
+    }
+    {
+      type: RegionPart
+      suffix: -blade-l
+      progress: warmup
+      moveX: -5
+    }
+    {
+      type: RegionPart
+      suffix: -blade-r
+      progress: warmup
+      moveX: 5 
+    }
+  ]
+  } 
+
+shoot: {  
+shots: 1
+}
+ammoTypes: {
+crimsonium: {
+    ammoMultiplier: 12
+    reloadMultiplier: 1
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    instantDisappear: true
+    damage: 0
+    spawnUnit: wrath-missile-crimz
+  }
+ignizium: {
+    ammoMultiplier: 6
+    reloadMultiplier: 0.75
+    shootEffect: missileTrailSmoke
+    smokeEffect: shootBigSmoke
+    instantDisappear: true
+reloadMultiplier: 0.5
+rangeChange: 210
+    damage: 0
+    spawnUnit: wrath-missile-igniz
+  }
+
+}
+category: turret
+research: incendiarism
+   "hasLiquids" : true,
+"liquidCapacity":30,
+    "consumes":{
+		"coolant":{"liquid": "water", "amount":0.4,"optional":true},
+	},
+    "coolantMultiplier": 1
+
+requirements: [
+ crimsonium/500
+ lead/400
+ copper/600
+plastanium/320
+silicon/450
+]

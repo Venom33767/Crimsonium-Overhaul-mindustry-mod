@@ -1,0 +1,109 @@
+{
+   type :  LaserTurret  
+   name  :  Damnation  
+   description  :  EVEN BIGGER LASER GO BRRRRR (crux r cooked)
+  size: 4
+   health : 790 
+   reload : 80 
+   range : 250 
+   shootLength : 10 
+   targetAir : true 
+shootY: 6 
+   targetGround : true 
+   consumes : {
+     power : 20 
+     liquid : {
+       liquid :  water  
+       amount : 0.4
+    }
+  } 
+   update : true 
+   hasPower : true 
+    firingMoveFract : 0.8 
+   shootDuration : 260 
+   shootSound :  subnautica-laser-shoot  
+   loopSound :  subnautica-laser-loop  
+   loopSoundVolume : 1.5 
+   recoilAmount : 1.5 
+   restitution : 0.04 
+   rotateSpeed : 2.25 
+   shootType : {
+     type :  ContinuousLaserBulletType  
+     damage : 40 
+     width : 4 
+     colors : [
+       db8132  
+       e0432b  
+       ff8214  
+       FFFFFF 
+    ] 
+     length : 250 
+     status :  burning  
+     statusDuration : 400 
+     largeHit : false 
+     oscScl : 2 
+     oscMag : 2 
+     hitEffect :  flakExplosion 
+     drawSize : 100 
+     incendChance : 0
+ intervalBullets: 1
+  bulletInterval: 5
+  intervalRandomSpread: 0
+  intervalBullet: {
+    instantDisappear: true
+    damage: 0
+    despawnSound: none
+    hitSound: none
+    despawnEffect: {  type :  multiEffect  
+       layer : 110 
+       effects : [
+        {
+           type :  ParticleEffect  
+           particles : 100
+           sizeFrom : 2 
+           sizeTo : 0.5 
+           length : 110 
+           lifetime : 90 
+           interp :  fastSlow  
+           lightColor :  f8b872  
+           colorFrom :  f8b872  
+           colorTo :  a66632  
+           cone : 15
+          followParent: true
+          rotWithParent: true
+        } 
+        {
+           type :  ParticleEffect  
+           particles : 50 
+           sizeFrom : 2 
+           sizeTo : 0.5 
+           length : 120 
+           lifetime : 100 
+           interp :  fastSlow  
+           lightColor :  f8b872  
+           colorFrom :  f8b872  
+           colorTo :  a66632  
+           cone : 10
+    followParent: true
+          rotWithParent: true
+        }
+      ]
+    }
+     }
+
+    hitEffect: none
+    shootEffect: none
+  } 
+ requirements : [
+crimsonium/340
+ copper/900
+lead/490
+ignizium/480
+silicon/400
+plastanium/450
+] 
+   "hasLiquids" : true,
+"liquidCapacity":30,
+   category :  turret  
+   research :  massacre 
+}

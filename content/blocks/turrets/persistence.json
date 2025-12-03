@@ -1,0 +1,42 @@
+{
+  "type": "ContinuousTurret",
+  "name": "Laser",
+  "description": "Shoots out a constant laser beam, nothing more to say",
+  "health": 540,
+  "size": 3,
+  "category": "turret",
+  "requirements": [
+    "copper/150",
+    "lead/150",
+    "titanium/100"
+    "molten-alloy/25"
+  ],
+  "targetAir": true,
+  "targetGround": true,
+  "outlineIcon": true,
+  "conductivePower": true,
+  "range": 175,
+  "loopSound": "minebeam",
+  "loopSoundVolume": 1,
+  "shootSound": "none",
+  "cooldownTime" : 300,
+  "recoil": 1,
+  "rotateSpeed": 3,
+  "shootY": -1.5,
+  "consumes": {
+  "power": 5.0
+},
+"shootType": {
+  "type": "PointLaserBulletType",
+  "sprite": "crimsonium-overhaul-laser",
+  	"damage": 30.0,
+},
+  "requirements": [
+    "crimsonium/140",
+    "silicon/120",
+    "lead/190",
+    "ignizium/30"
+  ],
+  "category": "turret",
+  "research": "flamer"
+  }

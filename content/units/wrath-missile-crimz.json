@@ -1,0 +1,135 @@
+type: missile
+template: MissileUnitType
+flying: true
+speed: 5
+physics: false
+lifetime: 90
+rotateSpeed: 10
+homingDelay: 3
+trailLength: 0
+useUnitCap: false
+missileAccelTime: 20
+drawCell: false
+lowAltitude: true
+    deathSound: explosionbig 
+    deathExplosionEffect: {
+type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+         particles : 1 
+         sizeFrom : 70
+         sizeTo : 0 
+         region: large-bomb
+         length : 0 
+         lightColor :  FFFFFF  
+         lifetime : 80
+         layer : 109 
+         colorFrom :  f73232  
+         colorTo :  530015 
+      }
+ {
+         type:  waveEffect  
+         lifetime : 70
+            sizeFrom : 13 
+         sizeTo : 30 
+         colorFrom :  f73232
+         colorTo :  530015 
+      }
+
+ ]
+}
+abilities: [
+  {
+    type: MoveEffectAbility
+    interval: 3
+    effect: {
+      type: ParticleEffect
+      cone: 45
+      baseRotation: 180
+      particles: 8
+      length: 3.2
+      baseLength: 4
+      line: true
+      strokeFrom: 1.6
+      strokeTo: 1
+      colorFrom: f73232
+      colorTo: 530015
+    }
+    rotateEffect: true
+  }
+]
+outlines: false  
+weapons: [
+  {
+    reload: 1
+    predictTarget: false 
+    useAttackRange: false
+    shootOnDeath: true
+    mirror: true
+    status: burning
+    shootSound: none
+    shootCone: 360
+    
+    shake: 3
+    bullet: {
+      type: ExplosionBulletType
+      ammoMultiplier: 12
+      splashDamage: 40
+      splashDamageRadius: 32
+   fragBullets : 4
+   fragVelocityMin: 2
+   fragVelocityMax: 2
+       fragBullet : {
+         type :  basicBulletType  
+         width : 16
+         homingPower: 0.2
+         height : 16
+         speed : 1 
+         lifetime : 30 
+         damage : 10 
+         splashDamage : 10 
+         splashDamageRadius : 30 
+         bulletSprite: large-bomb
+         pierce: true
+         pierceCap: 2
+         status :  burning  
+             shootEffect :  shootSmall  
+             smokeEffect :  shootSmallSmoke  
+             hitEffect : {
+            type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+         particles : 1 
+         sizeFrom : 20
+         sizeTo : 0 
+         region: large-bomb
+         length : 0 
+         lightColor :  FFFFFF  
+         lifetime : 50
+         layer : 109 
+         colorFrom :  f73232  
+         colorTo :  530015 
+      }
+ {
+         type:  waveEffect  
+         lifetime : 40
+            sizeFrom : 3 
+         sizeTo : 20 
+         colorFrom :  f73232
+         colorTo :  530015 
+      }
+
+ ]
+}
+  
+             buildingDamageMultiplier : 0.5 
+             ammoMultiplier : 1
+         frontColor : f73232  
+         backColor : 530015
+      }
+
+    }
+  } 
+]

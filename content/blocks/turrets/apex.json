@@ -1,0 +1,196 @@
+{
+  "type": "PowerTurret",
+  "size": 3,
+  "name": "Apex",
+  "description": "Shoots out big energy bullets, that send lightnings on impact"
+  "health": 430,
+  "range": 180,
+  "reload": 200,
+  "targetAir": true,
+  "targetGround": true,
+  "shootCone": 60,
+  "recoilAmount": 4,
+  "shootY": 0
+  "restitution": 0.08,
+  "rotateSpeed": 6,
+  "shootShake": 2,
+  "shoot": {
+    "firstShotDelay": 100
+  },
+  "moveWhileCharging": true,
+  "shootSound": "laser",
+  "chargeSound": "lasercharge2",
+  "consumes": {
+    "power": 28
+  },
+  "hasPower": true,
+  "shootType": {
+    "type": "EmpBulletType",
+    "sprite": "large-bomb",
+ "chainEffect": "flakExplosion",
+      "hitPowerEffect": "flakExplosion",
+    "chargeEffect": {
+      "type": "WaveEffect",
+      "lifetime": 90,
+      "sizeFrom": 50,
+      "sizeTo": 0,
+      "strokeFrom": 0,
+      "strokeTo": 5,
+      "colorFrom": "ffc970",
+      "colorTo": "804714"
+    },
+    "chargeBeginEffect": {
+      "type": "ParticleEffect",
+      "particles": 1,
+      "region": "large-bomb"
+      "sizeFrom": 0,
+      "sizeTo": 30,
+      "interp": "swingOut",
+      "length": 0,
+      "lifetime": 100,
+      "colorFrom": "ffc970",
+      "colorTo": "804714"
+    },
+    "damage": 90,
+    "splashDamage": 50,
+    "splashDamageRadius": 80,
+    "hitShake": 10,
+    "height": 20,
+    "width": 20,
+    "speed": 5,
+    "lifetime": 30,
+    "homingPower": 0.3,
+    "homingRange": 40,
+    "trailColor": "804714",
+    "trailParam": 5,
+    "trailLength": 19,
+    "trailWidth": 6.5,
+    "radius": 80,
+    "timeIncrease": 2.5,
+    "powerDamageScl": 5.5,
+    "powerSclDecrease": 0.55,
+     "hitEffect": {
+type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+         particles : 1 
+         sizeFrom : 70
+         sizeTo : 0 
+         region: large-bomb
+         length : 0 
+         lightColor :  FFFFFF  
+         lifetime : 80
+         layer : 109 
+         colorFrom : ffc970  
+         colorTo :  804714 
+      }
+ {
+         type:  waveEffect  
+         lifetime : 70
+            sizeFrom : 13 
+         sizeTo : 30 
+         colorFrom : ffc970
+         colorTo :  804714 
+      }
+
+ ]
+}
+
+    "despawnEffect": "none",
+    "deathExplosionEffect": {
+type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+         particles : 1 
+         sizeFrom : 70
+         sizeTo : 0 
+         region: large-bomb
+         length : 0 
+         lightColor :  FFFFFF  
+         lifetime : 80
+         layer : 109 
+         colorFrom : ffc970  
+         colorTo :  804714 
+      }
+ {
+         type:  waveEffect  
+         lifetime : 70
+            sizeFrom : 13 
+         sizeTo : 30 
+         colorFrom : ffc970
+         colorTo :  804714 
+      }
+
+ ]
+}
+
+
+    "frontColor": "FFFFFFF",
+    "backColor": "ffc970",
+    "fragBullets": 6,
+    "fragBullet": {
+      "type": "basicBulletType",
+      "sprite": "crimsonium-overhaul-star",
+      "status": "burning",
+      "trailColor": "804714",
+      "trailParam": 5,
+      "trailLength": 10,
+      "trailWidth": 3.5,
+      "homingPower": 0.2,
+      "homingRange": 20,
+      "weaveMag": 5,
+      "weaveScale": 3,
+      "height": 25,
+      "width": 25,
+      "shrinkX": 0,
+      "shrinkY": 0,
+      "spin": 5,
+      "lifetime": 50,
+      "speed": 4.5,
+      "damage": 20,
+        "despawnEffect": {
+type: multiEffect
+    effects: [
+      {
+        type: ParticleEffect
+         particles : 1 
+         sizeFrom : 40
+         sizeTo : 0 
+         region: large-bomb
+         length : 0 
+         lightColor : FFFFFF  
+         lifetime : 80
+         layer : 109 
+         colorFrom : ffc970  
+         colorTo :  804714 
+      }
+ {
+         type:  waveEffect  
+         lifetime : 70
+            sizeFrom : 3 
+         sizeTo : 10 
+         colorFrom : ffc970
+         colorTo :  804714 
+      }
+
+ ]
+}
+
+
+      "frontColor": "FFFFFFF",
+      "backColor": "ffc970"
+    }
+  },
+  "requirements": [
+    "plastanium/200",
+    "crimsonium/130",
+    "silicon/120",
+    "titanium/90",
+    "lead/70",
+    "ignizium/140"
+  ],
+  "category": "turret",
+  "research": "flamer"
+}

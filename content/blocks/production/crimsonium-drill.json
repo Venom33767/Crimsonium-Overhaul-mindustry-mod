@@ -1,0 +1,25 @@
+{
+"name": "Crimsonium Drill",
+"description": "Mines ores faster than the laser drill",
+"type": "drill",
+"health": "440",
+"size": "3",
+"tier": 4,
+"drillTime": 200,
+"liquidCapacity":30,
+"consumes": {
+   "power": 2,
+	"coolant":{"liquid": "water", "amount":0.2,"optional":true},
+},
+"itemCapacity":25,
+"requirements": [
+ { "item": "crimsonium", "amount": 40},
+ { "item": "titanium", "amount": 45},
+ { "item": "copper", "amount": 60},
+ { "item": "graphite", "amount": 50},
+],
+
+    "coolantMultiplier": 1
+"category": "production" ,
+"research": "laser-drill"
+}

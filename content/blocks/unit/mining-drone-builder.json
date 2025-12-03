@@ -1,0 +1,36 @@
+{
+  "type": "UnitFactory",
+   "name": "Drone factory"
+    "description": "Creates small mining drones to mine ores easilly",
+  "researchCostMultiplier": 0.3,
+  "size": 2,
+  "consumes": {
+    "power": 5
+  },
+  "plans": [
+    {
+      "unit": "mining-drone",
+      "requirements": [
+        "crimsonium/10",
+         "silicon/10"
+      ],
+      "time": 150
+    }
+    ],
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 120
+    },
+    {
+      "item": "graphite",
+      "amount": 80
+    },
+    {
+      "item": "crimsonium",
+      "amount": 70
+    }
+  ],
+  "category": "units",
+  "research": "ground-factory"
+}

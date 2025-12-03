@@ -1,0 +1,82 @@
+{
+  "outlineColor": "36363c",
+  "type": "legs",
+  "name": "Gyres",
+  "research": {
+    "parent": "amynthas",
+    "requirements": [
+      "crimsonium/4630",
+      "lead/5600",
+      "silicon/4200"
+    ]
+  },
+  "speed": 0.8,
+  "hitSize": 10,
+  "health": 780,
+  "faceTarget": true,
+  "armor": 2,
+  "range": 100,
+   "targetAir": true,
+  "rotateSpeed": 3,
+  "legMoveSpace": 1,
+  "legMaxLength": 1.3,
+  "legMinLength": 0.4,
+  "legLengthScl": 1,
+  "legForwardScl": 1.1,
+  "legPhysicsLayer": false,
+  "legGroupSize": 4,
+  "legCount": 6,
+  "legExtension": -2,
+  "legContinuousMove": true,
+  "lockLegBase": true,
+  "rippleScale": 0.2,
+  "legBaseOffset": 5,
+  "legLength": 14,
+  "allowLegStep": true,
+  "hovering": true,
+  "immunities": [
+    "freezing"
+  ],
+  "weapons": [
+    {
+             "name": "small-launcher"
+"x": 9,
+            "y": -1,
+
+ top: true
+  recoil: 0
+  innacuracy: 10
+  reload: 120
+  rotate: false
+  mirror: true
+  alternate: true
+  shoot: {
+     "type": "shootSpread",
+    "spread": 4,
+     "shots": 3,
+    "shotDelay": 3
+ }
+  "shootCone": 30,
+      
+"shootSound": "shootBig",
+      "bullet": {
+        "type": "missileBulletType",
+        "width": 8,
+        "height": 11,
+        "sprite": "circle-bullet",
+        "frontColor": "ff8214",
+        "backColor": "FFFFFF",
+        "lifetime": 30,
+        "speed": 6,
+        "damage": 35,
+        "recoil": 0.3,
+
+        "splashDamage": 20,
+        "splashDamageRadius": 25,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "hitEffect": "flakExplosion"
+        }
+      }
+  ]
+}

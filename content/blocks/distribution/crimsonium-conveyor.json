@@ -1,0 +1,15 @@
+{
+"name": "Crimsonium Conveyor",
+"description": "Transports things, faster than the titanium conveyor",
+"type": "conveyor",
+"health": "120",
+"size": "1",
+"requirements": [
+ { "item": "crimsonium", "amount": 1},
+ { "item": "titanium", "amount": 2},
+ { "item": "copper", "amount": 3},
+],
+"category": "distribution" ,
+"speed": 0.12,
+"research": "titanium-conveyor"
+}

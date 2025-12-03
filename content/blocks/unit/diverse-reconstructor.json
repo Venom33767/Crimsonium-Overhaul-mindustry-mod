@@ -1,0 +1,63 @@
+{
+  "type": "Reconstructor",
+  "name": "Diverse reconstructor",
+  "size": 9,
+  "constructTime": 2000,
+  "consumes": {
+    "power": 22,
+    "items": {
+      "items": [
+        {
+          "item": "crimsonium",
+          "amount": 890
+        },
+        {
+          "item": "thorium",
+          "amount": 850
+        },
+        {
+          "item": "surge-alloy",
+          "amount": 920
+        },
+        {
+          "item": "silicon",
+          "amount": 1920
+        },
+        {
+          "item": "plastanium",
+          "amount": 1380
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "thorium",
+      "amount": 850
+    },
+    {
+      "item": "plastanium",
+      "amount": 680
+    },
+    {
+      "item": "titanium",
+      "amount": 750
+    },
+    {
+      "item": "silicon",
+      "amount": 1200
+    },
+    {
+      "item": "surge-alloy",
+      "amount": 1280
+    }
+  ],
+  "upgrades": [
+    [
+      "quatric",
+      "hierogly"
+    ]
+   ],
+  "category": "units",
+  "research": "tetrative-reconstructor"
+}

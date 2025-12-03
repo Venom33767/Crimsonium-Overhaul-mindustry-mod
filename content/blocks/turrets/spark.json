@@ -1,0 +1,168 @@
+{
+   name :  Spark  
+   description :  Shoots out a constant stream of molten scoriazon  
+ type :  PowerTurret  
+   squareSprite : false 
+   outlineColor :  423926  
+   size : 2 
+   health : 420 
+   range : 80 
+   reload : 12 
+   heatColor :  f74e05  
+   shootY : 3 
+   hasPower : true 
+   targetAir : true 
+   drawer : {
+     type :  drawTurret  
+  } 
+   recoil : 0 
+   inaccuracy : 5 
+   rotateSpeed : 5 
+   shoot : {
+     type :  shootPattern  
+     shots : 4 
+     shotDelay : 1
+  } 
+   shootSound :  flame  
+   consumes : {
+     power : 4 
+  liquid : {
+       liquid :  scoriazon  
+       amount : 0.15
+    }
+  } 
+   shootType: {
+     type :  BasicBulletType  
+     status :  burning  
+     statusDuration : 30 
+     speed : 5 
+     damage : 20 
+     hitSize : 9 
+               pierce: true
+         pierceCap: 2
+     width : 0.1 
+     height : 0.1 
+     shootEffect : {
+       type :  multiEffect  
+       layer : 110 
+       effects : [
+        {
+           type :  ParticleEffect  
+           particles : 2 
+           sizeFrom : 3 
+           sizeTo : 1 
+           length : 140 
+           lifetime : 30 
+           interp :  circleOut  
+           sizeInterp :  pow5In  
+           lightColor :  f8b872  
+           colorFrom :  f8b872  
+           colorTo :  a66632  
+           cone : 10
+        } 
+        {
+           type :  ParticleEffect  
+           particles : 2 
+           sizeFrom : 3 
+           sizeTo : 1 
+           length : 100 
+           lifetime : 35 
+           interp :  circleOut  
+           sizeInterp :  pow5In  
+           lightColor :  f8b872  
+           colorFrom :  f8b872  
+           colorTo :  a66632  
+           cone : 15
+        } 
+        {
+           type :  ParticleEffect  
+           particles : 2 
+           sizeFrom : 2 
+           sizeTo : 0.5 
+           length : 110 
+           lifetime : 40 
+           interp :  fastSlow  
+           lightColor :  f8b872  
+           colorFrom :  f8b872  
+           colorTo :  a66632  
+           cone : 15
+        } 
+        {
+           type :  ParticleEffect  
+           particles : 2 
+           sizeFrom : 2 
+           sizeTo : 0.5 
+           length : 120 
+           lifetime : 50 
+           interp :  fastSlow  
+           lightColor :  f8b872  
+           colorFrom :  f8b872  
+           colorTo :  a66632  
+           cone : 10
+        }
+      ]
+    } 
+     smokeEffect : {
+       type :  multiEffect  
+       layer : 109 
+       effects : [
+        {
+           type :  ParticleEffect  
+           particles : 3 
+           sizeFrom : 3 
+           sizeTo : 1 
+           length : 160 
+           lifetime : 50 
+           lightOpacity : 0 
+           interp :  fastSlow  
+           colorFrom :  fc7b03  
+           colorTo :  a66632  
+           cone : 15
+        } 
+        {
+           type :  ParticleEffect  
+           particles : 3 
+           sizeFrom : 3 
+           sizeTo : 1 
+           length : 180 
+           lifetime : 60 
+           lightOpacity : 0 
+           interp :  circleOut  
+           sizeInterp :  pow5In  
+           colorFrom :  f8b872  
+           colorTo :  a66632  
+           cone : 10
+        }
+      ]
+    } 
+     lifetime : 27 
+     despawnEffect :  none  
+     hittable : false 
+     reflectable : false 
+     hitEffect : {
+       type :  ParticleEffect  
+       line : true 
+       particles : 4 
+       lifetime : 65 
+       offset : 10 
+       interp :  circleOut  
+       length : 70 
+       cone : -30 
+       strokeFrom : 3 
+       strokeTo : 0 
+       lenFrom : 7 
+       lenTo : 0 
+       colorFrom :  f8b872  
+       colorTo :  a66632 
+    } 
+     pierceBuilding : true
+  } 
+requirements: [
+ crimsonium/230
+ lead/150
+ copper/300
+ignizium/225
+]
+   category :  turret  
+   research :  ember 
+}
